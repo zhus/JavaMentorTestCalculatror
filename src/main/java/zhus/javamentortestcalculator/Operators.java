@@ -4,10 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BinaryOperator;
 
-/**
- *
- * @author zhus
- */
 public class Operators {
 
     private static final Map<String, BinaryOperator<Integer>> operators = new HashMap<>();

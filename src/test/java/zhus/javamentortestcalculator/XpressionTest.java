@@ -14,14 +14,14 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class XpressionTest {
 
-    Map<String, String> tests;
-
     public XpressionTest() {
 
     }
 
     @org.junit.jupiter.api.Test
     public void testResults() {
+
+        Map<String, String> tests;
 
         tests = new HashMap<>();
         tests.put("1 + 1", "2");

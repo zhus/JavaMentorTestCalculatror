@@ -1,9 +1,5 @@
 package zhus.javamentortestcalculator;
 
-/**
- *
- * @author zhus
- */
 public class Xpression {
 
     String raw;
