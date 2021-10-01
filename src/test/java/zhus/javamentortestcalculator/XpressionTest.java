@@ -33,10 +33,7 @@ public class XpressionTest {
         for (Map.Entry<String, String> test : tests.entrySet()) {
             try {
                 String res = new Xpression(test.getKey()).parse().evaluate().toString();
-                assertEquals(res, test.getValue(),
-                             "выражение:\n\t" + test.getKey()
-                             + "\nожидаем:\n\t" + test.getValue()
-                             + "\nполучили:\n\t" + res);
+                assertEquals(res, test.getValue(), test.getKey());
             } catch (Exception ex) {
                 fail("выражение:\n\t" + test.getKey() + "\n вызвало незапланированное исключение");
             }
@@ -55,7 +52,7 @@ public class XpressionTest {
                     () -> new Xpression(test.getKey()).parse().evaluate().toString(),
                     test.getKey() + " не выбросило исключение"
             );
-            assertTrue(thrown.getMessage().contains(test.getValue()), "не вывело " + test.getValue());
+            assertTrue(thrown.getMessage().contains(test.getValue()), test.getKey() +" не вывело " + test.getValue());
         }
 
     }
