@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Калькулятор умеет выполнять операции");
-        System.out.println("сложения, вычитания, умножения и деления с двумя числами:");
+        System.out.println("сложения, вычитания, умножения и деления с двумя числами: ");
         System.out.println("a + b, a - b, a * b, a / b\n");
 
         Scanner sc = new Scanner(System.in);
